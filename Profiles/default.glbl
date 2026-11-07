@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description>Default SauceDemo local test configuration.</description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Base URL for the public SauceDemo training application.</description>
+      <initValue>''</initValue>
+      <name>BASE_URL</name>
+      <protected>true</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Public training account shown on the SauceDemo login page.</description>
+      <initValue>''</initValue>
+      <name>STANDARD_USERNAME</name>
+      <protected>true</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Public training account used for the negative locked-out login test.</description>
+      <initValue>''</initValue>
+      <name>LOCKED_OUT_USERNAME</name>
+      <protected>true</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Shared public demo password listed on the SauceDemo login page.</description>
+      <initValue>''</initValue>
+      <name>DEMO_PASSWORD</name>
+      <protected>true</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

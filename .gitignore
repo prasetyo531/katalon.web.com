@@ -1,0 +1,24 @@
+.gradle
+
+bin
+
+Reports
+
+Libs
+
+output
+
+!output/.gitkeep
+build
+
+.classpath
+
+.project
+
+.cache
+
+# Browser driver binaries downloaded or managed locally by Katalon
+Drivers/
+
+# macOS Finder metadata
+.DS_Store
