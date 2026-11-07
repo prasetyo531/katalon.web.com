@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
-   <description>Smoke tests for SauceDemo login and checkout.</description>
+   <description>Smoke tests for SauceDemo login, cart, and checkout.</description>
    <name>TS_SauceDemo_Smoke</name>
    <tag>SauceDemo, Smoke</tag>
    <isRerun>false</isRerun>
@@ -27,5 +27,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Smoke/TC_Checkout_Backpack</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f0b33f12-e010-49cd-9390-64c428d8ac5d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Smoke/TC_Cart_RemoveBackpack</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

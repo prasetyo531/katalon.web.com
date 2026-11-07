@@ -9,6 +9,7 @@ Proyek otomasi UI web untuk [SauceDemo](https://www.saucedemo.com/), dibuat deng
 | `TC_Login_StandardUser` | Login dengan akun demo standar | Berhasil masuk ke halaman Products |
 | `TC_Login_LockedOutUser` | Login dengan akun demo yang terkunci | Login ditolak dengan pesan locked out |
 | `TC_Checkout_Backpack` | Tambahkan Sauce Labs Backpack dan selesaikan checkout | Ringkasan harga benar dan halaman konfirmasi pesanan muncul |
+| `TC_Cart_RemoveBackpack` | Tambahkan lalu hapus Sauce Labs Backpack dari keranjang | Badge keranjang hilang dan halaman cart tidak menampilkan item |
 
 Semua case di atas dimasukkan ke suite `TS_SauceDemo_Smoke`.
 
@@ -26,12 +27,14 @@ SauceDemoKatalon/
 │   └── Smoke/
 │       ├── TC_Login_StandardUser.tc
 │       ├── TC_Login_LockedOutUser.tc
-│       └── TC_Checkout_Backpack.tc
+│       ├── TC_Checkout_Backpack.tc
+│       └── TC_Cart_RemoveBackpack.tc
 ├── Scripts/
 │   └── Smoke/
 │       ├── TC_Login_StandardUser/Script*.groovy
 │       ├── TC_Login_LockedOutUser/Script*.groovy
-│       └── TC_Checkout_Backpack/Script*.groovy
+│       ├── TC_Checkout_Backpack/Script*.groovy
+│       └── TC_Cart_RemoveBackpack/Script*.groovy
 ├── Object Repository/
 │   └── Pages/
 │       ├── Login/
@@ -66,7 +69,7 @@ Folder opsional yang belum berisi file di proyek ini dapat dibuat saat diperluka
 | `Scripts/` | Langkah otomatisasi untuk setiap test case. Nama folder harus sama dengan nama case; file script dikelola Katalon sebagai `Script*.groovy`. |
 | `Object Repository/` | Selector elemen web dalam file `.rs`, dikelompokkan berdasarkan halaman. Gunakan object repository dari script dengan `findTestObject(...)`. |
 | `Keywords/` | Keyword Groovy yang dapat dipakai ulang. Saat ini `saucedemo/LoginKeywords.groovy` membungkus proses login. |
-| `Test Suites/` | File `.ts` yang mengelompokkan case untuk dijalankan bersama. Suite smoke proyek ini berisi tiga test case di atas. |
+| `Test Suites/` | File `.ts` yang mengelompokkan case untuk dijalankan bersama. Suite smoke proyek ini berisi empat test case di atas. |
 | `Profiles/` | Variabel konfigurasi per environment. `default.glbl` menyimpan URL dan kredensial publik demo SauceDemo. |
 | `Include/config/` | Konfigurasi logging proyek. |
 | `settings/internal/`, `settings/external/` | Pengaturan internal proyek dan konfigurasi eksternal Katalon. Ubah melalui Project Settings di Studio jika memungkinkan. |
