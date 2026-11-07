@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify a valid public demo account reaches the SauceDemo inventory page.</description>
+   <name>TC_Login_StandardUser</name>
+   <tag>SauceDemo, Smoke</tag>
+   <comment></comment>
+   <testCaseGuid>be294e5e-186d-4242-b24b-9b82e2d23799</testCaseGuid>
+</TestCaseEntity>
